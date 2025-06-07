@@ -71,7 +71,7 @@ module.exports = {
     },
     getAllCourse: async (req, res) => {
         const courses = await CourseModel.find()
-            .populate("creator", "-password")
+            .populate("creator", "username")
             .populate("category", "title name")
             .lean()
             .sort({_id: -1});
