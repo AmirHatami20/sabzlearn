@@ -95,7 +95,6 @@ function CourseInfoPage() {
 
     }
 
-    console.log(courseInfo);
     const mainBoxData = [
         {
             title: "وضعیت دوره",
@@ -316,12 +315,12 @@ function CourseInfoPage() {
                             <div className="w-20 h-20">
                                 <img
                                     className="w-full h-full rounded-full"
-                                    src={!courseInfo?.creator ? noProfile : courseInfo?.creator?.imageUrl}
+                                    src={noProfile}
                                     alt="profile"
                                 />
                             </div>
                             <span
-                                className="font-dana-demiBold text-lg">مدرس دوره | {courseInfo.creator ? courseInfo.creator.name : "نامشخص"}</span>
+                                className="font-dana-demiBold text-lg">مدرس دوره | نامشخص</span>
                             <p className="text-center">
                                 برنامه نویس فول استک وب ،موبایل ،دستکاپ کارشناس ارشد مهندسی
                                 کامپیوتر نرم افزار
