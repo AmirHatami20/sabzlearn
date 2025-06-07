@@ -95,6 +95,7 @@ function CourseInfoPage() {
 
     }
 
+    console.log(courseInfo);
     const mainBoxData = [
         {
             title: "وضعیت دوره",
@@ -315,7 +316,7 @@ function CourseInfoPage() {
                             <div className="w-20 h-20">
                                 <img
                                     className="w-full h-full rounded-full"
-                                    src={!courseInfo.creator ? noProfile : courseInfo?.creator?.imageUrl}
+                                    src={!courseInfo?.creator ? noProfile : courseInfo?.creator?.imageUrl}
                                     alt="profile"
                                 />
                             </div>
