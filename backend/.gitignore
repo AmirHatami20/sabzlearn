@@ -1,0 +1,21 @@
+# dependencies
+/node_modules
+
+# environment variables
+.env
+
+# log files
+logs
+*.log
+
+# OS
+.DS_Store
+
+# process manager files
+pids
+*.pid
+*.seed
+
+# build
+/dist
+/build
