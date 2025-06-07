@@ -16,7 +16,7 @@ function AuthLayout({children}) {
                 <div
                     className="max-w-[330px] w-full pt-5 pb-6 px-6 text-center bg-white dark:bg-white/10 rounded-xl shadow-lg"
                 >
-                    {children} // children
+                    {children}
 
                 </div>
                 <div className="max-w-[330px] w-full mx-auto text-center mt-7 sm:mt-8">
