@@ -1,7 +1,6 @@
 require("dotenv").config();
 const express = require('express');
 const cors = require('cors');
-const path = require('path');
 
 const connectDB = require('./config/db');
 
@@ -22,7 +21,6 @@ app.use(cors({
     allowedHeaders: ["Content-Type", "Authorization"],
 }));
 
-app.use('/uploads', express.static(path.join(__dirname, "/uploads")));
 app.use(express.json());
 app.use(express.urlencoded({extended: true}));
 
