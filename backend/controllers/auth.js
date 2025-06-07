@@ -89,15 +89,6 @@ module.exports = {
             });
         }
 
-        const isPasswordValid = UserModel.comparePassword(password)
-
-        if (!isPasswordValid) {
-            return res.status(401).json({
-                success: false,
-                message: 'Passwords is unCorrect'
-            })
-        }
-
         return sendOtp(email, res); // Send otp
     },
     verify: async (req, res) => {
