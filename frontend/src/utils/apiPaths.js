@@ -3,10 +3,10 @@ export const BASE_URL = "https://sabzlearn-yrz3.onrender.com";
 // utils/apiPaths.js
 export const API_PATHS = {
     AUTH: {
-        REGISTER: "/Auth/register",
-        LOGIN: "/Auth/login",
-        VERIFY: "/Auth/verify",
-        GET_USER_INFO: "/Auth/me",
+        REGISTER: "/auth/register",
+        LOGIN: "/auth/login",
+        VERIFY: "/auth/verify",
+        GET_USER_INFO: "/auth/me",
     },
     ARTICLE: {
         CREATE: "/article",
